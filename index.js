@@ -50,6 +50,10 @@ const swaggerOptions = {
 // Routes
 const itemsRouter = require('./routes/items');
 app.use('/items', itemsRouter);
+
+const userRoutes = require('./routes/items');
+app.use('/api', userRoutes);
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
